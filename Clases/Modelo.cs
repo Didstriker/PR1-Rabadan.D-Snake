@@ -6,15 +6,22 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    public static class Map
+    public static class Mapping
     {
-        string[,] map = new string[15, 15];
+        static char[,] map = new char[40, 40];
 
-        public string[,] Map { get { return map; } private set { map = value; } }
+        public static char[,] Map { get { return map; } private set { map = value; } }
+
+        
     }
 
-    public class Player
+    public static class Player
     {
+        static char snakehead = 'e';
+
+        static char snakebody = '#';
+
+        static int snakelenght;
 
     }
 
